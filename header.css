@@ -1,0 +1,39 @@
+/* header */
+.menu-links>li>a {
+  color: rgba(239, 236, 236, 0.75);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu-links>li>a:hover {
+  color: rgba(239, 236, 236);
+  text-decoration: underline;
+}
+
+/* menu-mobile */
+.menu-mobile {
+  height: 100vh;
+  width: 60vw;
+  z-index: 100;
+  top: 192px;
+  left: 0%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(44, 51, 47);
+}
+
+.menu-mobile li {
+  padding: 12px 32px;
+}
+
+.menu-mobile li:hover {
+  cursor: pointer;
+  background: rgba(239, 236, 236, 0.04);
+}
+
+.menu-mobile li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(239, 236, 236);
+}
