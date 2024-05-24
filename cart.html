@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./cart.css" />
     <link rel="stylesheet" href="./detail-item.css" />
     <link rel="stylesheet" href="./styles-global.css" />
     <title>1971-seiko-gs-5646-7012</title>
@@ -321,149 +322,199 @@
 
     <!-- main -->
     <main>
-      <div class="container box-shipping">
-        <h2>Shipping policy</h2>
-        <div class="box-description">
-          <p>
-            Our watches are carefully shipped in durable, good quality watch
-            boxes. Watches on leather strap will come in a beautiful, hard,
-            Japan made flat box. Watches with a steel bracelet will come on a
-            cushion inside a durable, suede like finish, cube shaped box.
-          </p>
-          <p>Shipping rates and methods are country or region dependent.</p>
-          <p><a href="#">Domestic, within Japan</a></p>
-          <p>Cost: 1,050 yen</p>
-          <p>Courier: Yamato Transport</p>
-          <p><a href="#">International</a></p>
-          <p>
-            Due to the war in Ukraine, some restrictions are still in place.
-          </p>
-          <p>(Japanese YEN)</p>
-          <div class="box-table">
-            <table class="table table-responsive table-bordered">
+      <div class="container">
+        <div class="cart-content">
+          <div class="box-header">
+            <h2 style="font-size: 40px; color: #252525">Your cart</h2>
+            <a style="font-size: 18px; color: #505655" href="./index.html">
+              Continue shopping
+            </a>
+          </div>
+          <div class="box-table-cart">
+            <table class="table custom-table-cart">
               <thead>
                 <tr>
-                  <th>Region</th>
-                  <th>FedEx</th>
-                  <th>DHL</th>
-                  <th>SAGAWA/DHL</th>
-                  <th>EMS</th>
-                  <th>Yamato</th>
+                  <th class="product-col">Product</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Asia 1</td>
-                  <td>―</td>
-                  <td>4,400</td>
-                  <td>3,200</td>
-                  <td>2,800</td>
-                  <td>―</td>
+                  <td>
+                    <div class="cart-product">
+                      <div class="left">
+                        <img src="https://placehold.co/450x450" alt="img" />
+                      </div>
+                      <div class="right">
+                        <a href="./detail-item.html">
+                          1987 Seiko Majesta 9063-5010
+                        </a>
+                        <p
+                          style="
+                            color: #252525bf;
+                            font-size: 16px;
+                            margin-top: 8px;
+                          "
+                        >
+                          9.325.000₫
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-quantity">
+                      <div class="counter-container">
+                        <button class="counter-button" id="decrement">-</button>
+                        <span class="counter-value" id="counter">1</span>
+                        <button class="counter-button" id="increment">+</button>
+                      </div>
+                      <i
+                        class="bi bi-trash3"
+                        style="color: #252525; font-size: 20px"
+                      ></i>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-total">
+                      <p style="color: #252525; font-size: 18px">9.325.000₫</p>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Asia 2</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>3,800</td>
-                  <td>2,900</td>
-                  <td>―</td>
+                  <td>
+                    <div class="cart-product">
+                      <div class="left">
+                        <img src="https://placehold.co/450x450" alt="img" />
+                      </div>
+                      <div class="right">
+                        <a href="./detail-item.html">
+                          1987 Seiko Majesta 9063-5010
+                        </a>
+                        <p
+                          style="
+                            color: #252525bf;
+                            font-size: 16px;
+                            margin-top: 8px;
+                          "
+                        >
+                          9.325.000₫
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-quantity">
+                      <div class="counter-container">
+                        <button class="counter-button" id="decrement">-</button>
+                        <span class="counter-value" id="counter">1</span>
+                        <button class="counter-button" id="increment">+</button>
+                      </div>
+                      <i
+                        class="bi bi-trash3"
+                        style="color: #252525; font-size: 20px"
+                      ></i>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-total">
+                      <p style="color: #252525; font-size: 18px">9.325.000₫</p>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Australia</td>
-                  <td>―</td>
-                  <td>4,600</td>
-                  <td>3,400</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>Europe</td>
-                  <td>5,200</td>
-                  <td>―</td>
-                  <td>4,000</td>
-                  <td>3,600</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>Japan</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>1,050</td>
-                </tr>
-                <tr>
-                  <td>Middle East</td>
-                  <td>5,900</td>
-                  <td>―</td>
-                  <td>4,900</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>North America</td>
-                  <td>5,100</td>
-                  <td>―</td>
-                  <td>4,000</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>South and Central America</td>
-                  <td>9,200</td>
-                  <td>―</td>
-                  <td>5,000</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>The rest of the world</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>5,400</td>
-                  <td>―</td>
-                  <td>―</td>
+                  <td>
+                    <div class="cart-product">
+                      <div class="left">
+                        <img src="https://placehold.co/450x450" alt="img" />
+                      </div>
+                      <div class="right">
+                        <a href="./detail-item.html">
+                          1987 Seiko Majesta 9063-5010
+                        </a>
+                        <p
+                          style="
+                            color: #252525bf;
+                            font-size: 16px;
+                            margin-top: 8px;
+                          "
+                        >
+                          9.325.000₫
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-quantity">
+                      <div class="counter-container">
+                        <button class="counter-button" id="decrement">-</button>
+                        <span class="counter-value" id="counter">1</span>
+                        <button class="counter-button" id="increment">+</button>
+                      </div>
+                      <i
+                        class="bi bi-trash3"
+                        style="color: #252525; font-size: 20px"
+                      ></i>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-total">
+                      <p style="color: #252525; font-size: 18px">9.325.000₫</p>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="des-small">
-            <p>
-              Asia 1 : China, Hong Kong SAR, Indonesia, Macao SAR, Malaysia,
-              Philippines, Singapore, South Korea, Taiwan, Thailand
+        </div>
+        <div class="cart-footer">
+          <div style="display: flex; flex-direction: column; align-items: end">
+            <div class="d-flex">
+              <p style="font-weight: 500; font-size: 20px; color: #252525">
+                Subtotal
+              </p>
+              <p style="margin-left: 20px; font-size: 18px; color: #252525bf">
+                9.325.000 VND
+              </p>
+            </div>
+            <p style="margin: 24px 0; color: #252525bf; font-size: 16px">
+              Taxes and
+              <a style="color: #252525bf" href="./shipping.html">shipping</a>
+              calculated at checkout
             </p>
-            <p>Asia 2 : Cambodia, India, Vietnam</p>
-            <p>
-              Europe : Andorra, Austria, Belgium, Bulgaria, Croatia, Cyprus,
-              Czechia, Denmark, Estonia, Faroe Islands, Finland, France,
-              Georgia, Germany, Greece, Hungary, Iceland, Ireland, Italy,
-              Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mayotte,
-              Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway,
-              Poland, Réunion, San Marino, Serbia, Slovakia, Slovenia, Spain,
-              Sweden, Switzerland, Turkey, United Kingdom, Åland Islands,
-              Albania, Armenia, Belarus, Bosnia & Herzegovina, Gibraltar,
-              Greenland, Guadeloupe, Guernsey, Isle of Man, Jersey, Kosovo,
-              Portugal, Romania, Svalbard & Jan Mayen, Ukraine, Vatican City
-            </p>
-            <p>
-              Middle East : Bahrain, Israel, Kuwait, Oman, Saudi Arabia, Qatar,
-              United Arab Emirates, Yemen
-            </p>
-            <p>North America : Canada, United States</p>
-            <p>
-              South and Central America : Argentina, Bahamas, Barbados, Brazil,
-              Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, El
-              Salvador, Honduras, Jamaica, Paraguay, Peru, Uruguay, Venezuela,
-              Mexico
-            </p>
+            <button
+              class="btn btn-secondary"
+              style="font-size: 18px; padding: 8px 124px"
+            >
+              Check out
+            </button>
+            <div class="d-flex gap-2 mt-2 mb-2">
+              <div>
+                <div
+                  style="
+                    padding: 6px 24px;
+                    background-color: #5a31f4;
+                    color: #fff;
+                  "
+                  class="btn"
+                >
+                  Shop Pay
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    padding: 6px 24px;
+                    background-color: #000000;
+                    color: #fff;
+                  "
+                  class="btn"
+                >
+                  G Pay
+                </div>
+              </div>
+            </div>
           </div>
-          <p style="margin-top: 56px">
-            If you have any questions or concerns regarding shipping, don't
-            hesitate to
-            <a href="#">contact us</a>
-            .
-          </p>
-          <p style="margin-top: 48px">Thank you</p>
         </div>
       </div>
     </main>

@@ -14,11 +14,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./home.css" />
     <link rel="stylesheet" href="./footer.css" />
-    <link rel="stylesheet" href="./detail-item.css" />
     <link rel="stylesheet" href="./styles-global.css" />
-    <title>1971-seiko-gs-5646-7012</title>
+    <link rel="stylesheet" href="./seiko.css" />
+    <title>Vintage Seiko watches - Tokeimedic</title>
   </head>
+
   <body>
     <!-- header -->
     <header class="bg-main">
@@ -321,154 +323,303 @@
 
     <!-- main -->
     <main>
-      <div class="container box-shipping">
-        <h2>Shipping policy</h2>
-        <div class="box-description">
-          <p>
-            Our watches are carefully shipped in durable, good quality watch
-            boxes. Watches on leather strap will come in a beautiful, hard,
-            Japan made flat box. Watches with a steel bracelet will come on a
-            cushion inside a durable, suede like finish, cube shaped box.
-          </p>
-          <p>Shipping rates and methods are country or region dependent.</p>
-          <p><a href="#">Domestic, within Japan</a></p>
-          <p>Cost: 1,050 yen</p>
-          <p>Courier: Yamato Transport</p>
-          <p><a href="#">International</a></p>
-          <p>
-            Due to the war in Ukraine, some restrictions are still in place.
-          </p>
-          <p>(Japanese YEN)</p>
-          <div class="box-table">
-            <table class="table table-responsive table-bordered">
-              <thead>
-                <tr>
-                  <th>Region</th>
-                  <th>FedEx</th>
-                  <th>DHL</th>
-                  <th>SAGAWA/DHL</th>
-                  <th>EMS</th>
-                  <th>Yamato</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Asia 1</td>
-                  <td>―</td>
-                  <td>4,400</td>
-                  <td>3,200</td>
-                  <td>2,800</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>Asia 2</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>3,800</td>
-                  <td>2,900</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>Australia</td>
-                  <td>―</td>
-                  <td>4,600</td>
-                  <td>3,400</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>Europe</td>
-                  <td>5,200</td>
-                  <td>―</td>
-                  <td>4,000</td>
-                  <td>3,600</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>Japan</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>1,050</td>
-                </tr>
-                <tr>
-                  <td>Middle East</td>
-                  <td>5,900</td>
-                  <td>―</td>
-                  <td>4,900</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>North America</td>
-                  <td>5,100</td>
-                  <td>―</td>
-                  <td>4,000</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>South and Central America</td>
-                  <td>9,200</td>
-                  <td>―</td>
-                  <td>5,000</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-                <tr>
-                  <td>The rest of the world</td>
-                  <td>―</td>
-                  <td>―</td>
-                  <td>5,400</td>
-                  <td>―</td>
-                  <td>―</td>
-                </tr>
-              </tbody>
-            </table>
+      <div class="container">
+        <div class="section">
+          <h2 class="h1">Vintage Seiko</h2>
+          <div class="box-filter">
+            <div class="filter-control">
+              <p>Filter</p>
+              <div class="dropdown show box-dropdown">
+                <a
+                  class="dropdown-toggle box-dropdown-link"
+                  href="#"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Availability
+                </a>
+
+                <div
+                  class="dropdown-menu box-dropdown-menu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div class="box-above">
+                    <p>0 selected</p>
+                    <a href="#">Reset</a>
+                  </div>
+                  <div class="box-beneth">
+                    <div class="item" data-stayopen="true">
+                      <input
+                        type="checkbox"
+                        id="in_stock"
+                        name="in_stock"
+                        value="in_stock"
+                      />
+                      <label for="in_stock">In Stock (32)</label>
+                    </div>
+                    <div class="item" data-stayopen="true">
+                      <input
+                        type="checkbox"
+                        id="out_of_stock"
+                        name="out_of_stock"
+                        value="out_of_stock"
+                      />
+                      <label for="out_of_stock">Out of stock (684)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-control">
+              <div>
+                <p>Sort by:</p>
+                <select name="filter-by" id="filter-by">
+                  <option value="__">Featured</option>
+                  <option value="__">Best selling</option>
+                  <option value="__">Alphabetically, A-Z</option>
+                  <option value="__">Alphabetically, Z-A</option>
+                  <option value="__">Price, low to high</option>
+                  <option value="__">Price, high to low</option>
+                  <option value="__">Date, old to new</option>
+                  <option value="__">Date, new to old</option>
+                </select>
+              </div>
+              <p>716 products</p>
+            </div>
           </div>
-          <div class="des-small">
-            <p>
-              Asia 1 : China, Hong Kong SAR, Indonesia, Macao SAR, Malaysia,
-              Philippines, Singapore, South Korea, Taiwan, Thailand
-            </p>
-            <p>Asia 2 : Cambodia, India, Vietnam</p>
-            <p>
-              Europe : Andorra, Austria, Belgium, Bulgaria, Croatia, Cyprus,
-              Czechia, Denmark, Estonia, Faroe Islands, Finland, France,
-              Georgia, Germany, Greece, Hungary, Iceland, Ireland, Italy,
-              Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mayotte,
-              Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway,
-              Poland, Réunion, San Marino, Serbia, Slovakia, Slovenia, Spain,
-              Sweden, Switzerland, Turkey, United Kingdom, Åland Islands,
-              Albania, Armenia, Belarus, Bosnia & Herzegovina, Gibraltar,
-              Greenland, Guadeloupe, Guernsey, Isle of Man, Jersey, Kosovo,
-              Portugal, Romania, Svalbard & Jan Mayen, Ukraine, Vatican City
-            </p>
-            <p>
-              Middle East : Bahrain, Israel, Kuwait, Oman, Saudi Arabia, Qatar,
-              United Arab Emirates, Yemen
-            </p>
-            <p>North America : Canada, United States</p>
-            <p>
-              South and Central America : Argentina, Bahamas, Barbados, Brazil,
-              Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, El
-              Salvador, Honduras, Jamaica, Paraguay, Peru, Uruguay, Venezuela,
-              Mexico
-            </p>
+          <div class="row g-4 mt-4">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card">
+                <div class="card-box">
+                  <img src="https://placehold.co/350x350" alt="image" />
+                </div>
+                <div class="card-body d-flex gap-2 align-items-center py-4">
+                  <div class="d-flex flex-column flex-wrap">
+                    <a href="./detail-item.html">1971 Seiko GS 5646-7010</a>
+                    <h3 class="py-3 mb-2">27.486.000 VND</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <p style="margin-top: 56px">
-            If you have any questions or concerns regarding shipping, don't
-            hesitate to
-            <a href="#">contact us</a>
-            .
-          </p>
-          <p style="margin-top: 48px">Thank you</p>
+          <div
+            class="text-center d-flex justify-content-center"
+            style="margin-top: 56px"
+          >
+            <nav aria-label="pagination">
+              <ul class="pagination pagination-lg">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">45</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </main>
-    <!-- main -->
 
+    <!-- main -->
     <footer class="footer">
       <div class="container">
         <div class="footer-first">
@@ -753,7 +904,22 @@
         </div>
       </div>
     </footer>
-
+    <!-- add script -->
     <script src="./index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

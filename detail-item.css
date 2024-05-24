@@ -11,21 +11,20 @@
   border-radius: 8px;
   cursor: pointer;
 }
-
 .left-side .box-img:hover .icon-search {
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   padding: 8px;
   border-radius: 100%;
   text-align: center;
   background: white;
 }
-
 .left-side .box-img .icon-search {
   position: absolute;
-  left: 1%;
-  top: 1%;
+  left: 3%;
+  top: 3%;
   display: none;
+  z-index: 99;
 }
 
 /* right side */
@@ -43,12 +42,10 @@
   margin: 12px 0;
   font-size: 16px;
 }
-
 .btn-buy {
   color: #ffffff;
   background-color: rgb(90, 49, 244);
 }
-
 .infor-checking {
   margin: 32px 0;
   position: relative;
@@ -57,14 +54,12 @@
   flex-direction: column;
   gap: 16px;
 }
-
 .infor-checking div {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-
-.infor-checking>.bi {
+.infor-checking > .bi {
   position: absolute;
   top: -3%;
   left: 1%;
@@ -72,18 +67,15 @@
   font-size: 16px;
   margin-right: 4px;
 }
-
 .infor-checking p {
   font-size: 14px;
   color: #252525bf;
 }
-
 .infor-checking a {
   font-size: 14px;
   color: #252525bf;
 }
-
-.box-des>p {
+.box-des > p {
   letter-spacing: 1px;
   margin-top: 32px;
   font-size: 18px;
