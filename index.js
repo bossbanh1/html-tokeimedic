@@ -16,7 +16,7 @@ function toggleSidebar() {
   }
 }
 
-function toggleSubMenuSeiko() {}
+function toggleSubMenuSeiko() { }
 function toggleSubMenuSeiko() {
   const defaultMenu = document.querySelector('.menu-mobile-default');
   const selectedMenu = document.querySelector('.menu-mobile-selected-seiko');
@@ -85,5 +85,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
   decrementBtn.addEventListener('click', function () {
     counter.textContent = parseInt(counter.textContent) - 1;
+  });
+});
+
+//slider
+$(document).ready(function () {
+  $('.slider-reviews').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 });
