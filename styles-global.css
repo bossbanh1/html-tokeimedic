@@ -116,7 +116,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -126,7 +126,7 @@ table {
 
 /* global css */
 body {
-  font-family: 'Sedan SC', serif;
+  font-family: "Sedan SC", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -162,6 +162,19 @@ body {
   overflow: hidden;
   position: relative;
 }
+.sold {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
 .card-box p {
   z-index: 10;
   color: white;
