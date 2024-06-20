@@ -17,6 +17,33 @@
     <link rel="stylesheet" href="./footer.css" />
     <link rel="stylesheet" href="./detail-item.css" />
     <link rel="stylesheet" href="./styles-global.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <style>
+      .slider {
+        width: 100%;
+      }
+      .slider-nav .slick-slide {
+        cursor: pointer;
+      }
+      .slick-next {
+        right: 10px;
+      }
+      .slick-next:before {
+        color: rgb(44, 51, 47);
+      }
+      .slick-slide {
+        margin: 12px 8px;
+      }
+    </style>
     <title>1971-seiko-gs-5646-7012</title>
   </head>
 
@@ -362,59 +389,67 @@
       <div class="container row detail-box">
         <!-- Left column -->
         <div class="col-md-6 left-side">
-          <div class="box-img">
-            <i class="bi bi-search icon-search"></i>
-            <div class="zoom">
-              <img src="https://placehold.co/600x600" alt="img" />
+          <div class="slider slider-for">
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
+              </div>
+            </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
+              </div>
+            </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
+              </div>
+            </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
+              </div>
+            </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
+              </div>
             </div>
           </div>
-          <div class="row g-3 mt-2">
-            <div class="col-md-6 d-none d-md-block">
-              <div class="box-img">
-                <i class="bi bi-search icon-search"></i>
-                <div class="zoom">
-                  <img src="https://placehold.co/300x300" alt="img" />
-                </div>
+          <div class="slider slider-nav">
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
               </div>
             </div>
-            <div class="col-md-6 d-none d-md-block">
-              <div class="box-img">
-                <i class="bi bi-search icon-search"></i>
-                <div class="zoom">
-                  <img src="https://placehold.co/300x300" alt="img" />
-                </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
               </div>
             </div>
-            <div class="col-md-6 d-none d-md-block">
-              <div class="box-img">
-                <i class="bi bi-search icon-search"></i>
-                <div class="zoom">
-                  <img src="https://placehold.co/300x300" alt="img" />
-                </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
               </div>
             </div>
-            <div class="col-md-6 d-none d-md-block">
-              <div class="box-img">
-                <i class="bi bi-search icon-search"></i>
-                <div class="zoom">
-                  <img src="https://placehold.co/300x300" alt="img" />
-                </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
               </div>
             </div>
-            <div class="col-md-6 d-none d-md-block">
-              <div class="box-img">
-                <i class="bi bi-search icon-search"></i>
-                <div class="zoom">
-                  <img src="https://placehold.co/300x300" alt="img" />
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 d-none d-md-block">
-              <div class="box-img">
-                <i class="bi bi-search icon-search"></i>
-                <div class="zoom">
-                  <img src="https://placehold.co/300x300" alt="img" />
-                </div>
+            <div class="box-img">
+              <i class="bi bi-search icon-search"></i>
+              <div class="zoom">
+                <img src="https://placehold.co/600x600" alt="img" />
               </div>
             </div>
           </div>
@@ -879,5 +914,30 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider-for").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: ".slider-nav",
+        });
+
+        $(".slider-nav").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: ".slider-for",
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+        });
+      });
+    </script>
   </body>
 </html>
