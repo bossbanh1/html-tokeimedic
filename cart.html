@@ -22,10 +22,9 @@
   </head>
   <body>
     <!-- header -->
-
     <header class="bg-main">
       <div
-        class="container box-header justify-content-between align-items-center pt-3 pe-sm-5 ps-sm-5 pb-0"
+        class="container box-header justify-content-between align-items-center pt-2 pe-sm-5 ps-sm-5 pb-2"
       >
         <div
           class="zoom cursor-pointer d-md-block d-none"
@@ -46,7 +45,7 @@
         <div
           class="d-flex flex-column justify-content-center align-items-center"
         >
-          <div>
+          <div class="d-none d-md-block">
             <img
               srcset="
                 //tokeimedic.com/cdn/shop/files/logo_transparent_2.png?v=1655631584&amp;width=250 1x,
@@ -188,9 +187,9 @@
         </div>
         <div class="d-flex gap-4 align-items-center">
           <div class="zoom cursor-pointer" onclick="toggleSearchBox()">
-            <i class="bi bi-search fs-4 text-white d-block d-md-none"></i>
+            <i class="bi bi-search fs-4 text-white d-none"></i>
           </div>
-          <div class="zoom cursor-pointer">
+          <div class="zoom cursor-pointer d-md-block d-none">
             <a href="./cart.html" class="position-relative">
               <i class="bi bi-bag fs-4 text-white"></i>
               <span
@@ -211,7 +210,39 @@
             </a>
           </div>
         </div>
+        <div
+          class="text-white text-center w-100 d-block d-md-none"
+          style="font-size: 20px"
+        >
+          JAWATCH VIETNAME
+        </div>
       </div>
+      <!-- start header with search updated -->
+      <div class="d-block d-md-none">
+        <div class="input-group px-4 pt-2">
+          <input
+            type="text"
+            class="form-control form-control-md rounded-search"
+            placeholder="Search..."
+            aria-label="Search"
+            style="border-top-right-radius: 0; border-bottom-right-radius: 0"
+          />
+          <button
+            class="btn bg-white rounded-search"
+            type="button"
+            id="button-addon2"
+            style="border-top-left-radius: 0; border-bottom-left-radius: 0"
+          >
+            <i class="bi bi-search text-black"></i>
+          </button>
+        </div>
+        <div class="text-center p-4 text-white d-flex flex-column gap-3">
+          <div>AUTOMATIC</div>
+          <div>MANUAL WINDING</div>
+          <div>QUARTZ</div>
+        </div>
+      </div>
+      <!-- end header with search updated -->
       <!-- start search section -->
       <div class="search-component">
         <div
