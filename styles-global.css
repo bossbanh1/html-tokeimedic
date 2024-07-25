@@ -299,4 +299,10 @@ body {
   .box-table {
     overflow-x: scroll;
   }
+  .bg-main {
+    background-color: #fff;
+  }
+  .toggle-icon {
+    color: #000000 !important;
+  }
 }
