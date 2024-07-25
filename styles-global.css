@@ -305,4 +305,7 @@ body {
   .toggle-icon {
     color: #000000 !important;
   }
+  .section {
+    padding: 24px 0;
+  }
 }
